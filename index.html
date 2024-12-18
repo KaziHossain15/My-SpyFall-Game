@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spyfall Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Spyfall Game</h1>
+    </header>
+    <main>
+        <section class="setup">
+            <h2>Game Setup</h2>
+            <p>Enter the number of players and their names to start the game.</p>
+            <label for="numPlayers">Number of Players (4-12):</label>
+            <input type="number" id="numPlayers" min="4" max="12">
+            <button id="setupPlayers">Next</button>
+        </section>
+
+        <section id="playerNamesSection" class="hidden">
+            <h2>Enter Player Names</h2>
+            <form id="playerForm"></form>
+            <button id="startGame">Start Game</button>
+        </section>
+
+        <section id="gameSection" class="hidden">
+            <h2>Roles Assigned</h2>
+            <div id="roles"></div>
+            <div class="instructions">
+                <h3>Game Instructions</h3>
+                <p>Players take turns asking each other questions to identify the spy. The spy must guess the location without being caught!</p>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
